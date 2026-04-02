@@ -1,0 +1,49 @@
+﻿# Setup Instructions
+
+## Quick Setup (5 Minutes)
+
+### 1. Install Prerequisites
+- Node.js v18+: https://nodejs.org/
+- MongoDB Compass: https://www.mongodb.com/try/download/compass
+- Get Gemini API Key: https://makersuite.google.com/app/apikey
+
+### 2. Setup MongoDB
+1. Open MongoDB Compass
+2. Connect: mongodb://127.0.0.1:27017
+3. Create database: video_ai_extension
+4. Create collection: generatedcontents
+
+### 3. Setup Backend
+```powershell
+cd video-ai-chrome-extension\backend
+npm install
+```
+
+Edit .env file - add your Gemini API key
+
+Start: npm start
+
+### 4. Setup Extension
+```powershell
+cd ..\extension
+npm install
+npm run build
+```
+
+Load in Chrome:
+- chrome://extensions/
+- Enable Developer mode
+- Load unpacked  select extension\dist
+
+### 5. Test
+- Go to YouTube
+- Play video until end
+- Click Quiz (MCQs)
+- Success!
+
+## Troubleshooting
+- Backend not starting? Check MongoDB is running
+- Extension not working? Reload extension and refresh page
+- Quiz not generating? Check console (F12) for errors
+
+For detailed instructions, see README.md
