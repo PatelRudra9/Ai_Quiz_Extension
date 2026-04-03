@@ -1,6 +1,5 @@
 # Video AI Chrome Extension for Automated Quiz and Q&A Generation
 
-Pruthavi  
 Artificial Intelligence & Machine Learning Dept., Charotar University of Science & Technology, Changa, India  
 Academic Year: 2025–2026
 
